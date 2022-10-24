@@ -1,0 +1,95 @@
+
+
+body {
+    font-family: sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#titulo{
+    color:rgb(6, 144, 159);
+    text-align: center;
+    font-size: 80px;
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+
+#descricao {
+    color: rgb(198, 190, 190);
+    font-size: 25px;
+    text-align: center;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.msg1{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.msg2{
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.seleciona {
+    border-radius: 5px;
+    text-align: center;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.bot-cod-decod{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    color: rgb(198, 190, 190);
+    
+}
+
+.chave-de-cesar {
+    display: none;
+    text-align: center;
+    color: rgb(198, 190, 190);
+    font-size: 20px;
+}
+.radio {
+   color: rgb(198, 190, 190);
+   display: flex;
+   gap:5px;
+   place-items: center;
+}
+
+input[type="radio"] {
+    accent-color: rgb(6, 144, 159);
+    width: 20px;
+    height: 20px;
+}
+
+.radio-cod-decod {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+    padding: 20px
+}
+
+.magic {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    display: inline-block;
+    font-size: 20px;
+    padding: 8px;
+    border-radius: 5px;
+    color: black;
+    font-family: sans-serif;
+    margin-bottom: 50px;
+}
+
+button:hover {
+    background-color: rgb(6, 144, 159);
+}

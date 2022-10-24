@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" 
+    content="IE=edge" />
+    <meta name="viewport" 
+    content="width=device-width, initial-scale=1.0" />
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="estilo/estilo.css" />
+    <link rel="shortcut icon" href="imagem/icone.ico" type="image/x-icon">
+    
+</head>
+
+<body>
+    <script defer src="javascript/script.js"></script>
+    
+    <h1 id="titulo">Criptomensagens</h1>
+
+   <p id="descricao"> &#x1F512 Esse espaço é para você se divertir codificando e decodificando mensagens secretas. Existem duas opções para decifrar e codificar uma mensagem, são elas a "base 64" e a "Cifra de César". Vamos começar? &#x1F512 </p>
+    
+   <form method="post">
+        <div class="msg1">
+            <textarea name="mensagem" id="mensagem" cols="100" rows="15" placeholder="Coloque a mensagem aqui">
+            </textarea>
+        </div>
+
+        <div class="bot-cod-decod">
+            <label id="seleciona" for="seleciona"></label>
+            <select name="seleciona" class="seleciona" id="seleciona">
+                <option value="selecione" disabled selected>Selecione</option>
+                <option value="base64">Base 64</option>
+                <option value="cifra">Cifra de césar</option>
+            </select>
+        </div>
+        
+        <div class="chave-de-cesar">
+            <label class="chave" for="range">Escolha a Chave:</label>
+            <div class="slider-range">
+                <input type="number" value="1" oninput= "range.value=value" id="rangenumber" min="1" max="26" />
+            </div>
+        </div>
+
+        <div class="radio-cod-decod">
+            <div class="radio">
+                <input type="radio" name="codificar" id="codificar" value="codificar" checked />
+                <label for="codificar">Codificar</label>
+            </div>
+
+            <div class="radio">
+                <input type="radio" name="codificar" id="decodificar" value="decodificar" />
+                <label for="decodificar">Decodificar</label>
+            </div>
+        </div>
+        
+        <div class="magic">
+            <button>Let's Go!</button>
+        </div>
+        
+        <div class="msg2">
+            <textarea id="resultado" class="mensagem resultado" cols="100" rows="15" readonly placeholder="Veja seu resultado aqui!"></textarea>
+        </div>
+           
+        
+    </form>
+
+    <style>
+        body{
+            background-image: url(imagem/fundo-black.jpg);
+        }
+    </style>
+
+</body>
+
+</html>
